@@ -1,4 +1,6 @@
 :root {
+  --bg-color: #252525;
+  --font-color: #fff;
   --footer-color: #d6d3c8;
 }
 
@@ -12,4 +14,45 @@
 
 body {
   font-family: Georgia, serif;
+}
+
+.menu {
+  background: var(--bg-color);
+  padding: 1.25em 0;
+}
+
+.menu-container {
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+.menu-container::after,
+.menu-container::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+a.menu-logo {
+  display: block;
+  /* padding: 20px; */
+  float: left;
+  margin-left: 0.625em;
+}
+
+.menu-nav {
+  float: right;
+  margin-right: 0.625em;
+}
+
+.menu-nav li {
+  display: inline-block;
+}
+
+.menu-nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 1.125em;
 }
