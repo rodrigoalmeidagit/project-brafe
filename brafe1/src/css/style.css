@@ -1,5 +1,10 @@
 :root {
   --bg-color: #252525;
+  --bg-product-color: #e7e4d8;
+  --bg-paulista-color: #492901;
+  --bg-carioca-color: #c17139;
+  --bg-mineiro-color: #d7a54d;
+  --border-product-color: #d6d3c8;
   --font-color: #fff;
   --footer-color: #d6d3c8;
 }
@@ -141,4 +146,79 @@ a.menu-logo {
   text-align: center;
   margin: 20px auto;
   max-width: 460px;
+}
+
+/* Produtos */
+.product {
+  background: var(--bg-product-color);
+  padding: 3.75em 0;
+  border-top: 3px solid var(--border-product-color);
+  border-bottom: 3px solid var(--border-product-color);
+}
+
+.product-container {
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+.product-container::before,
+.product-container::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.product-item {
+  width: 300px;
+  float: left;
+  margin: 0 10px 20px 10px;
+}
+
+.product-item h2 {
+  text-align: center;
+  font-size: 2.25em;
+  margin-bottom: 20px;
+}
+
+.product-item h2::before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: currentColor;
+  border-radius: 50%;
+  margin: 20px auto;
+  border: 5px solid white;
+  box-shadow: 0 0 0 10px currentColor;
+}
+
+h2.product-paulista::before {
+  color: var(--bg-paulista-color);
+}
+
+h2.product-carioca::before {
+  color: var(--bg-carioca-color);
+}
+
+h2.product-mineiro::before {
+  color: var(--bg-mineiro-color);
+}
+
+.product-item p {
+  font-size: 0.875em;
+  line-height: 1.4em;
+}
+
+.product-btn {
+  width: 180px;
+  border: 3px solid;
+  color: var(--bg-color);
+  display: block;
+  font-size: 1.125em;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 0;
+  margin: 20px auto 0 auto;
 }
