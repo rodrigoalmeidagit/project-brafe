@@ -340,3 +340,39 @@ h2.product-mineiro::before {
   cursor: pointer;
   color: var(--font-color);
 }
+
+.footer {
+  background: var(--footer-color);
+  padding: 40px 0;
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer-container::after,
+.footer-container::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.footer-container p {
+  float: left;
+  margin: 0 10px;
+  font-size: 1.125em;
+  line-height: 1.4em;
+}
+
+.footer-container img {
+  float: right;
+  margin: 0 10px;
+  display: block;
+}
+
+.footer-container p a {
+  text-decoration: none;
+  color: var(--font-color);
+  font-weight: bold;
+}
