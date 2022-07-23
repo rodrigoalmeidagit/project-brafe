@@ -165,6 +165,29 @@ a.menu-logo {
   max-width: 460px;
 }
 
+@media (min-width: 740px) and (max-width: 980px) {
+  .about-container {
+    max-width: 720px;
+  }
+  .about-item {
+    width: 340px;
+  }
+}
+
+@media (max-width: 739px) {
+  .about-container {
+    max-width: 300px;
+  }
+  .about-item {
+    width: 300px;
+    margin: 15px auto;
+  }
+
+  .about h2 {
+    margin-bottom: 40px;
+  }
+}
+
 /* Produtos */
 .product {
   background: var(--bg-product-color);
