@@ -263,6 +263,28 @@ h2.product-mineiro::before {
   margin: 20px auto 0 auto;
 }
 
+@media (min-width: 740px) and (max-width: 980px) {
+  .product-container {
+    max-width: 720px;
+  }
+  .product-item {
+    width: 220px;
+  }
+
+  .product-item p {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 739px) {
+  .product-container {
+    max-width: 300px;
+  }
+  .product-item {
+    margin: 0 auto 20px 10px;
+  }
+}
+
 /* Locais */
 .place {
   max-width: 960px;
