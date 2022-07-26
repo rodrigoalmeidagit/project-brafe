@@ -338,6 +338,38 @@ h2.product-mineiro::before {
   padding: 10px 20px;
 }
 
+@media (min-width: 740px) and (max-width: 980px) {
+  .place {
+    max-width: 720px;
+  }
+
+  .place-item > div,
+  .place-item img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 739px) {
+  .place {
+    max-width: 300px;
+  }
+
+  .place-item > div {
+    padding-bottom: 30px;
+  }
+
+  .place-item > div,
+  .place-item img {
+    width: 300px;
+    margin: 0px;
+  }
+
+  .place-item h2 {
+    padding-top: 10px;
+  }
+}
+
+/* NewsLetter */
 .newsletter {
   background: var(--bg-product-color);
   padding: 30px 0;
