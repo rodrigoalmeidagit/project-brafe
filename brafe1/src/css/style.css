@@ -435,6 +435,36 @@ h2.product-mineiro::before {
   color: var(--font-color);
 }
 
+@media (min-width: 740px) and (max-width: 980px) {
+  .newsletter-container {
+    max-width: 720px;
+  }
+
+  .newsletter-item,
+  .newsletter-form {
+    width: 340px;
+  }
+
+  .newsletter-form input {
+    width: 340px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 739px) {
+  .newsletter-container {
+    max-width: 300px;
+  }
+
+  .newsletter-item,
+  .newsletter-form,
+  .newsletter-form input {
+    width: 300px;
+    margin: 10px 0;
+  }
+}
+
+/* Footer */
 .footer {
   background: var(--footer-color);
   padding: 40px 0;
