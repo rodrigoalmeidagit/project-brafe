@@ -25,15 +25,42 @@ img {
 }
 
 /* Menu */
-
 .menu {
   background: #252525;
+  padding: 15px 0;
+}
+
+.menu-nav ul {
+  float: right;
+}
+
+.menu-nav ul li {
+  display: inline-block;
 }
 
 .menu-nav a {
   text-decoration: none;
   color: #fff;
   font-size: 1.125em;
+  margin-left: 10px;
+  padding: 10px;
+  display: block;
+}
+
+@media (max-width: 739px) {
+  img {
+    margin: 0 auto;
+  }
+
+  .menu-nav ul {
+    float: none;
+  }
+
+  .menu-nav ul li a {
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 8px;
+  }
 }
 
 /* Intro */
