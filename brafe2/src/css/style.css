@@ -286,12 +286,23 @@ h2.product-mineiro::before {
 }
 
 /*Footer*/
-
 .footer {
   background: #d6d3c8;
+  padding: 40px 0;
+}
+
+.footer img {
+  float: right;
 }
 
 .footer p {
   font-size: 1.125em;
   line-height: 1.4em;
+}
+
+@media (max-width: 739px) {
+  .footer img {
+    float: none;
+    margin-top: 20px;
+  }
 }
