@@ -81,11 +81,12 @@ body {
 }
 
 /* Intro */
-
 .intro {
   background: url('../img/bg-intro.jpg') no-repeat center center;
   background-size: cover;
   color: #fff;
+  text-align: center;
+  padding: 150px 0;
 }
 
 .intro h1 {
@@ -99,6 +100,7 @@ body {
   width: 20px;
   height: 4px;
   background: #fff;
+  margin: 20px auto;
 }
 
 .intro p {
