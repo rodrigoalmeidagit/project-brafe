@@ -1,5 +1,9 @@
 /* Reset */
 
+:root {
+  --bg-color: #252525;
+}
+
 body,
 h1,
 h2,
@@ -12,7 +16,7 @@ ul {
 
 body {
   font-family: Georgia, serif;
-  color: #252525;
+  color: var(--bg-color);
 }
 
 * {
